@@ -23,7 +23,7 @@ intents.message_content = True
 ```
 حالا باید بیاید و یک نمونه از خود ربات بسازید و این نمونه بالا رو بهش بدید:
 ```
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(intents=intents)
 ```
 خب حالا باید یک ایونت ایجاد کنیم که وقتی کد رو اجرا میکنیم هر وقت ربات کامل اجرا شد یه پیامی بده که ما متوجه بشیم:
 ```
