@@ -64,7 +64,7 @@ async def help(ctx: discord.Interaction):
 bot.run("TOKEN")
 ```
 به جای توکن هم توکن ربات خودتونو قرار میدید 
-<br><br>
+<br><br><br>
 داکیومنت کتابخونه دیسکورد:
 ```
 https://discordpy.readthedocs.io/en/stable
