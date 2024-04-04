@@ -17,11 +17,6 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 async def on_ready():
   # اینجا هر کاری میتونین بکنین ولی برای مثال اسم رباتی که باهاش کار میکنیم رو چاپ میکنیم
     print(f'Logged in as {bot.user}')
-    try:
-        synced = await bot.tree.sync()
-        print(len(synced))
-    except Exception as e:
-        print(e)
 
 # یک ایونت برای پیام های ارسال شده در گروه میسازیم که هر پیامی توی هر چنلی ارسال بشه این فانکشن صدا زده میشه
 @bot.event
