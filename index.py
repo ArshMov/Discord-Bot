@@ -10,13 +10,18 @@ intents.messages = True
 intents.message_content = True
 
 # اینجا باید یک اینستنس از ربات بسازیم ولی این command_prefix زیاد به درد نمیخوره چون اسلش کامند ها هستن
-bot = commands.Bot(command_prefix="!", intents=intents)
+bot = commands.Bot(intents=intents)
 
 # یک ایونت on_ready ایجاد میکنیم که هر وقت ربات کامل اجرا شد صدا زده میشه
 @bot.event
 async def on_ready():
   # اینجا هر کاری میتونین بکنین ولی برای مثال اسم رباتی که باهاش کار میکنیم رو چاپ میکنیم
     print(f'Logged in as {bot.user}')
+    try:
+        synced = await bot.tree.sync()
+        print(len(synced))
+    except Exception as e:
+        print(e)
 
 # یک ایونت برای پیام های ارسال شده در گروه میسازیم که هر پیامی توی هر چنلی ارسال بشه این فانکشن صدا زده میشه
 @bot.event
