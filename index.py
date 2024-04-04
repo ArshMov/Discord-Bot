@@ -1,6 +1,5 @@
 # وارد کردن ماژول دیسکورد و ماژول های اولیه
 import discord
-from discord import app_commands
 from discord.ext import commands
 
 # ساخت یک اینستنس از دیسکورد و دادن دسترسی ها
