@@ -10,7 +10,7 @@ intents.messages = True
 intents.message_content = True
 
 # اینجا باید یک اینستنس از ربات بسازیم ولی این command_prefix زیاد به درد نمیخوره چون اسلش کامند ها هستن
-bot = commands.Bot(intents=intents)
+bot = commands.Bot(intents=intents, command_prefix="!")
 
 # یک ایونت on_ready ایجاد میکنیم که هر وقت ربات کامل اجرا شد صدا زده میشه
 @bot.event
